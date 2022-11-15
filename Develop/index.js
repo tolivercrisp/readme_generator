@@ -80,6 +80,21 @@ const questions = [
             }
         }
     },
+    // Badge Color
+    {
+        type: 'checkbox',
+        name: 'color',
+        message: 'Pick a COLOR for your license badge.',
+        choices: ['blue', 'purple', 'red', 'orange', 'yellow', 'green', 'black'],
+        validate: yourColor => {
+            if (yourColor) {
+                return true;
+            } else {
+                console.log('ERROR: Please pick a color for your license badge.')
+                return false;
+            }
+        }
+    },
     // Contribution
     {
         type: 'input',
@@ -89,7 +104,7 @@ const questions = [
             if (yourContribution) {
                 return true;
             } else {
-                console.log('Error: Please describe how to CONTRIBUTE to your project.')
+                console.log('ERROR: Please describe how to CONTRIBUTE to your project.')
                 return false;
             }
         }
@@ -98,12 +113,12 @@ const questions = [
     {
         type: 'input',
         name: 'github',
-        message: 'Please enter your Github USERNAME:',
+        message: 'Please enter your GITHUB USERNAME:',
         validate: yourGithub => {
             if (yourGithub) {
                 return true;
             } else {
-                console.log('Error: Please enter your Github USERNAME.')
+                console.log('ERROR: Please enter your Github USERNAME.')
                 return false;
             }
         }
@@ -112,7 +127,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Please enter your email address (for users with questions):',
+        message: 'Please enter your EMAIL ADDRESS (for users with questions):',
         validate: yourGithub => {
             if (yourGithub) {
                 return true;
@@ -140,6 +155,8 @@ function init() {
     .then(function (userInput) {
         console.log(userInput)
         writeToFile("README.md", generateMarkdown(userInput))
+        console.log()
+        console.log("Congratulations! Your Readme.MD file has been generated.")
     })
 }
 

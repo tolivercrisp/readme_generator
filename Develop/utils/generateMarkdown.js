@@ -14,7 +14,7 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
   ## License:
-  [![license](https://img.shields.io/badge/license-${data.license}-blue.svg)](https://shields.io/)
+  [![license](https://img.shields.io/badge/License-${data.license}-${data.color}.svg)](https://shields.io/)
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -30,6 +30,7 @@ function generateMarkdown(data) {
   ## Usage:
   ${data.usage}
   ## License:
+  ${data.title} is software released under the ${data.license} license.
   ${data.license}
   ## Contribution:
   ${data.contribution}

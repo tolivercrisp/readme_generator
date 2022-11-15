@@ -1,6 +1,6 @@
-# ReadMe.MD Generator
+# na
   ## License:
-  [![license] (https://img.shields.io/badge/license-MIT-blue.svg)]()
+  [![license](https://img.shields.io/badge/License--.svg)](https://shields.io/)
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -10,18 +10,19 @@
   - [Additional Info](#additional-info)
 
   ## Description:
-  This application creates generates a pre-formatted and completed ReadMe.MD file based on the users input of several questions.
+  na
   ## Installation:
-  Not sure yet.
+  na
   ## Usage:
   na
   ## License:
-  MIT
+  na is software released under the  license.
+  
   ## Contribution:
   na
   ## Testing:
   undefined
   ## Contact Information:
-  - Github [tolivercrisp](https://github.com/tolivercrisp)
-  - Email: [toliverjcrisp@gmail.com]
+  - Github [na](https://github.com/na)
+  - Email: [na]
 
