@@ -85,7 +85,7 @@ const questions = [
         type: 'checkbox',
         name: 'color',
         message: 'Pick a COLOR for your license badge.',
-        choices: ['blue', 'purple', 'red', 'orange', 'yellow', 'green', 'black'],
+        choices: ['brightgreen', 'green','yellowgreen','yellow','orange','red','blue','lightgrey'],
         validate: yourColor => {
             if (yourColor) {
                 return true;
