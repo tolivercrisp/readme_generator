@@ -12,7 +12,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the TITLE of the project?'
+        message: 'What is the TITLE of the project?',
         validate: yourInput => {
             if (yourInput) {
                 return true;
@@ -27,7 +27,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Provide a brief DESCRIPTION of your project (3-4 sentences):'
+        message: 'Provide a brief DESCRIPTION of your project (3-4 sentences):',
         validate: yourDescription => {
             if (yourDescription) {
                 return true;
@@ -41,7 +41,7 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'How do you INSTALL your project?'
+        message: 'How do you INSTALL your project?',
         validate: yourInstallation => {
             if (yourInstallation) {
                 return true;
@@ -55,7 +55,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'How do you USE your project?'
+        message: 'How do you USE your project?',
         validate: yourUsage => {
             if (yourUsage) {
                 return true;
@@ -69,8 +69,8 @@ const questions = [
     {
         type: 'checkbox',
         name: 'license',
-        message: 'Which LICENSE would you like?'
-        choices: ['MIT', 'MPL 2.0', 'GNU', 'Apache', 'None of the above']
+        message: 'Which LICENSE would you like?',
+        choices: ['MIT', 'MPL 2.0', 'GNU', 'Apache', 'None of the above'],
         validate: yourLicense => {
             if (yourLicense) {
                 return true;
@@ -84,7 +84,7 @@ const questions = [
     {
         type: 'input',
         name: 'contribution',
-        message: 'How can users CONTRIBUTE to this project?'
+        message: 'How can users CONTRIBUTE to this project?',
         validate: yourContribution => {
             if (yourContribution) {
                 return true;
@@ -94,11 +94,11 @@ const questions = [
             }
         }
     },
-    // Contribution
+    // Github
     {
         type: 'input',
         name: 'github',
-        message: 'Please enter your Github USERNAME:'
+        message: 'Please enter your Github USERNAME:',
         validate: yourGithub => {
             if (yourGithub) {
                 return true;
@@ -112,7 +112,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Please enter your email address (for users with questions):'
+        message: 'Please enter your email address (for users with questions):',
         validate: yourGithub => {
             if (yourGithub) {
                 return true;
