@@ -168,8 +168,9 @@ function init() {
     .then(function (userInput) {
         console.log(userInput)
         writeToFile("README.md", generateMarkdown(userInput))
-        console.log()
-        console.log("Congratulations! Your Readme.MD file has been generated.")
+        console.log("\n")
+        console.log("-------------")
+        console.log("Your Readme.MD file has been successfully generated.")
     })
 }
 
