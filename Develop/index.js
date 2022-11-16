@@ -65,6 +65,13 @@ const questions = [
             }
         }
     },
+    // Credits
+    {
+        type: 'input',
+        name: 'credits',
+        message: 'If you would like to CREDIT other collaborators, please name them here (Optional --> press enter to skip):',
+        
+    },
     // Licensing
     {
         type: 'checkbox',
@@ -108,6 +115,12 @@ const questions = [
                 return false;
             }
         }
+    },
+    // Tests
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Describe your testing process here (Optional --> press enter to skip): '
     },
     // Github
     {
