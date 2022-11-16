@@ -12,7 +12,7 @@ ${data.description}
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
-  - [Testing](#testing)
+  - [Tests](#tests)
   - [Questions](#questions)
 
 ## Installation
@@ -38,7 +38,7 @@ This project has been released under the ${data.license} license.
 
 ---
 
-## How to Contribute
+## Contribution
 
 ${data.contribution}
 
